@@ -1,0 +1,12 @@
+#!/bin/bash
+sudo apt update
+sudo apt upgrade
+sudo apt-get install npm
+sudo apt install libfuse2
+sudo apt install nodejs -y
+sudo npm install -g snarkjs
+sudo su
+wget http://github.com/OwshenNetwork/owshen/releases/download/v0.1.1/Owshen_v0.1.1_x86_64.AppImage
+chmod +x Owshen_v0.1.1_x86_64.AppImage
+./Owshen_v0.1.1_x86_64.AppImage init --mnemonic "Your 12 Phassphrase"
+./Owshen_v0.1.1_x86_64.AppImage wallet
